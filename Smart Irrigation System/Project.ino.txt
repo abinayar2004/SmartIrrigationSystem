@@ -56,7 +56,7 @@ void loop()
   Serial.print(hif);
   Serial.println(F("°F"));
 
-  if (output_value<40 && h<55 && t<30 && f<30)
+  if (output_value<40 && h<55 && t>30 && f>30)
   {
     delay(1000);
     Serial.println("ON");
